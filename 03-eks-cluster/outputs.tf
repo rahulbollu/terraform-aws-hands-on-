@@ -10,7 +10,7 @@ output "cluster_oidc_issuer" {
  description = "OIDC issuer URL for the EKS cluster"
  value       = module.eks.oidc_provider
 }
-output "node_group_names" {
- description = "List of EKS node group names"
- value       = module.eks.node_groups
+output "node_pool_names" {
+  description = "List of node pool names"
+  value       = module.eks.compute.node_pool_names
 }
