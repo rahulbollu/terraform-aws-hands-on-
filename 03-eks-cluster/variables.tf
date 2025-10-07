@@ -16,5 +16,5 @@ variable "vpc_id" {
 variable "subnets" {
  description = "Subnets for worker nodes"
  type        = list(string)
- default =  "subnet-0d6371041900796a1" 
+ default    = ["subnet-0d6371041900796a1"]
 }
