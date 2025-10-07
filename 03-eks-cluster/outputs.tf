@@ -13,7 +13,9 @@ output "cluster_oidc_issuer" {
   value       = module.eks.oidc_provider
 }
 
+
 output "node_pool_names" {
   description = "List of node pool names"
-  value       = module.eks.node_pool_names
+  value       = module.eks.compute.node_pool_names
 }
+
