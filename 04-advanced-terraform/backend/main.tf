@@ -9,7 +9,7 @@ provider "aws" {
 # S3 Bucket for Terraform State
 ###########################################
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "my-terraform-state-bucket-demo"
+  bucket = "my-terraform-state-bucket-demo-new"
 
   tags = {
     Name        = "terraform-state"
