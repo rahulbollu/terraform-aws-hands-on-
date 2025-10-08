@@ -14,7 +14,7 @@ module "eks" {
     enabled    = true
     node_pools = ["general-purpose"]
   }
-
+  
   enable_cluster_creator_admin_permissions = true
 
   tags = {
