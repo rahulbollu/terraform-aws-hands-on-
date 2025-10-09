@@ -43,7 +43,7 @@ variable "availability_zones" {
 variable "ami_id" {
   description = "AMI ID for EC2 instance (Amazon Linux 2 in us-east-1)"
   type        = string
-  default     = "ami-0c55b159cbfafe1f0"
+  default     = "ami-0360c520857e3138f"
 }
 
 variable "instance_type" {
