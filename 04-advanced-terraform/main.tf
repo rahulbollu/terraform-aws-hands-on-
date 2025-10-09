@@ -24,7 +24,7 @@ module "ec2" {
   source            = "./modules/ec2"
   region            = var.region
   project_name      = var.project_name
-  subnet_id         = module.vpc.public[0].id
+  subnet_id         = module.vpc.public_subnet_ids[0]
   security_group_id = module.vpc.sg_id
   ami_id            = var.ami_id
   instance_type     = var.instance_type
