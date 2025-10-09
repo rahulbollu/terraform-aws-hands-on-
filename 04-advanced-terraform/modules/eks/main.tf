@@ -9,12 +9,12 @@ module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   version         = "~> 21.0"
 
-  cluster_name    = var.cluster_name
+  name    = var.cluster_name
   kubernetes_version = var.cluster_version
   vpc_id          = var.vpc_id
   subnet_ids      = var.subnet_ids
 
-  managed_node_groups = {
+  eks_managed_node_groups = {
     default = {
       desired_capacity = 2
       max_capacity     = 3
