@@ -8,14 +8,14 @@ provider "aws" {
 ###########################################
 # VPC Module
 ###########################################
-module "vpc" {
-  source             = "./modules/vpc"
-  region             = var.region
-  project_name       = var.project_name
-  vpc_cidr           = var.vpc_cidr
-  public_subnets     = var.public_subnets
-  availability_zones = var.availability_zones
-}
+# module "vpc" {
+#   source             = "./modules/vpc"
+#   region             = var.region
+#   project_name       = var.project_name
+#   vpc_cidr           = var.vpc_cidr
+#   public_subnets     = var.public_subnets
+#   availability_zones = var.availability_zones
+# }
 
 ###########################################
 # EC2 Module
